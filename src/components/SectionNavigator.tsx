@@ -31,9 +31,6 @@ export const SectionNavigator = ({ currentSection, onSectionChange }: SectionNav
                   </span>
                 )}
               </div>
-              <Badge variant="outline" className="text-xs">
-                Page {section.page}
-              </Badge>
             </Button>
           ))}
         </div>

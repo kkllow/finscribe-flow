@@ -55,11 +55,6 @@ export const ItemSelector = ({
         <label htmlFor={item.id} className="flex-1 text-sm cursor-pointer">
           {item.label}
         </label>
-        {item.noteRef && item.noteRef !== 'xxx' && (
-          <Badge variant="outline" className="text-xs">
-            Note {item.noteRef}
-          </Badge>
-        )}
       </div>
     );
   };

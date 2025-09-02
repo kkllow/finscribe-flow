@@ -23,7 +23,7 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
           {item.label}
         </td>
         <td className="py-1 px-3 text-center text-sm text-financial-gray">
-          {item.noteRef && item.noteRef !== 'xxx' ? item.noteRef : ''}
+          {/* Notes to be filled manually */}
         </td>
         <td className="py-1 px-3 text-right border-r border-statement-border">
           {/* Empty space for values */}

@@ -25,13 +25,13 @@ export interface StatementData {
 }
 
 export const FINANCIAL_SECTIONS: FinancialStatementSection[] = [
-  { id: "directors-statement", title: "Statement by Directors", page: 12 },
-  { id: "auditors-report", title: "Independent Auditor's Report", page: 15 },
-  { id: "profit-loss", title: "Statement of Profit or Loss and Other Comprehensive Income", page: 17 },
-  { id: "financial-position", title: "Statement of Financial Position", page: 23 },
-  { id: "changes-equity", title: "Statement of Changes in Equity", page: 26 },
-  { id: "cash-flows", title: "Statement of Cash Flows", page: 27 },
-  { id: "notes", title: "Notes to the Financial Statements", page: 30 }
+  { id: "directors-statement", title: "Statement by Directors", page: 0 },
+  { id: "auditors-report", title: "Independent Auditor's Report", page: 0 },
+  { id: "profit-loss", title: "Statement of Profit or Loss and Other Comprehensive Income", page: 0 },
+  { id: "financial-position", title: "Statement of Financial Position", page: 0 },
+  { id: "changes-equity", title: "Statement of Changes in Equity", page: 0 },
+  { id: "cash-flows", title: "Statement of Cash Flows", page: 0 },
+  { id: "notes", title: "Notes to the Financial Statements", page: 0 }
 ];
 
 export const FINANCIAL_POSITION_TEMPLATE: StatementData = {
