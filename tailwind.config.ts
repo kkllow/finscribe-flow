@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +52,16 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				financial: {
+					blue: 'hsl(var(--financial-blue))',
+					'blue-light': 'hsl(var(--financial-blue-light))',
+					gray: 'hsl(var(--financial-gray))',
+					'gray-light': 'hsl(var(--financial-gray-light))'
+				},
+				statement: {
+					border: 'hsl(var(--statement-border))',
+					header: 'hsl(var(--header-bg))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
