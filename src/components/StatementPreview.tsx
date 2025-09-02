@@ -72,6 +72,12 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
           </tbody>
         </table>
       </div>
+
+      <div className="mt-6 text-center">
+        <p className="text-sm text-financial-gray italic">
+          The accompanying notes form an integral part of these financial statements
+        </p>
+      </div>
     </div>
   );
 };

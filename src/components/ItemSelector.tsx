@@ -20,7 +20,7 @@ export const ItemSelector = ({
   onSelectAll, 
   onClearAll 
 }: ItemSelectorProps) => {
-  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set(['assets', 'currentAssets']));
+  const [expandedSections, setExpandedSections] = useState<Set<string>>(new Set(['assets', 'currentAssets', 'equity', 'nonCurrentLiabilities', 'currentLiabilities']));
 
   const toggleSection = (sectionKey: string) => {
     const newExpanded = new Set(expandedSections);
@@ -36,6 +36,9 @@ export const ItemSelector = ({
     switch (sectionKey) {
       case 'assets': return 'Non-current Assets';
       case 'currentAssets': return 'Current Assets';
+      case 'equity': return 'Equity';
+      case 'nonCurrentLiabilities': return 'Non-current Liabilities';
+      case 'currentLiabilities': return 'Current Liabilities';
       default: return sectionKey;
     }
   };
