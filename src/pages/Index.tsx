@@ -4,6 +4,8 @@ import { StatementPreview } from "@/components/StatementPreview";
 import { ItemSelector } from "@/components/ItemSelector";
 import { SectionNavigator } from "@/components/SectionNavigator";
 import { ExportControls } from "@/components/ExportControls";
+import { ContentsPage } from "@/components/ContentsPage";
+import { StatementByDirectors } from "@/components/StatementByDirectors";
 import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -61,6 +63,16 @@ const Index = () => {
           <h1 className="text-3xl font-bold mb-2">FinScribe Flow</h1>
           <p className="text-blue-100">Automated Financial Statement Template Generator</p>
         </div>
+      </div>
+
+      {/* Contents Page */}
+      <div className="max-w-7xl mx-auto p-6">
+        <ContentsPage />
+      </div>
+      
+      {/* Statement by Directors */}
+      <div className="max-w-7xl mx-auto p-6">
+        <StatementByDirectors />
       </div>
 
       {/* Main Content */}
