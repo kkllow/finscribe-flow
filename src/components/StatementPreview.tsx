@@ -10,17 +10,34 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
     if (!selectedItems.has(item.id) && !item.isHeader && !item.isSubHeader && item.category !== 'total' && item.category !== 'grand-total') {
       return null;
     }
-
+    
     const isVisible = selectedItems.has(item.id) || item.isHeader || item.isSubHeader || item.category === 'total' || item.category === 'grand-total';
     
     if (!isVisible) return null;
-
+    
     const isTotalRow = item.label.toLowerCase().includes('total') && (item.category === 'total' || item.category === 'grand-total');
-    const borderClass = isTotalRow ? 'border-t border-b border-statement-border' : '';
+    const isGrandTotal = item.label.toLowerCase().includes('total assets') || item.label.toLowerCase().includes('total equity and liabilities');
+    
+    // Determine border classes for columns 3 and 4 only
+    let column3BorderClass = '';
+    let column4BorderClass = '';
+    
+    if (isTotalRow) {
+      if (isGrandTotal) {
+        // Double line below and single line above for grand totals
+        column3BorderClass = 'border-t border-statement-border relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:border-b-2 after:border-statement-border after:mb-[-1px]';
+        column4BorderClass = 'border-t border-statement-border relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:border-b-2 after:border-statement-border after:mb-[-1px]';
+      } else {
+        // Single line above and below for section totals
+        column3BorderClass = 'border-t border-b border-statement-border';
+        column4BorderClass = 'border-t border-b border-statement-border';
+      }
+    }
+    
     const spacingClass = shouldAddSpacing ? 'pt-4' : '';
-
+    
     return (
-      <tr key={item.id} className={`${borderClass}`}>
+      <tr key={item.id}>
         <td className={`py-1 px-3 text-left ${spacingClass} ${item.isBold ? 'font-semibold' : ''} ${
           item.isHeader ? 'text-statement-header font-bold' : ''
         } ${item.isSubHeader ? 'font-semibold' : ''}`}>
@@ -29,10 +46,10 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
         <td className={`py-1 px-3 text-center text-sm text-financial-gray ${spacingClass}`}>
           {/* Notes to be filled manually */}
         </td>
-        <td className={`py-1 px-3 text-right ${spacingClass}`}>
+        <td className={`py-1 px-3 text-right ${spacingClass} ${column3BorderClass}`}>
           {/* Empty space for values */}
         </td>
-        <td className={`py-1 px-3 text-right ${spacingClass}`}>
+        <td className={`py-1 px-3 text-right ${spacingClass} ${column4BorderClass}`}>
           {/* Empty space for values */}
         </td>
       </tr>
@@ -49,7 +66,7 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
           {statementData.asAtDate}
         </p>
       </div>
-
+      
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
@@ -70,8 +87,13 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
           <tbody>
             {Object.entries(statementData.sections).map(([sectionKey, items]) =>
               items.map((item, itemIndex, sectionItems) => {
-                const prevItem = itemIndex > 0 ? sectionItems[itemIndex - 1] : null;
-                const shouldAddSpacing = prevItem && (prevItem.isHeader || prevItem.isSubHeader) && !item.isHeader && !item.isSubHeader;
+                const nextItem = itemIndex < sectionItems.length - 1 ? sectionItems[itemIndex + 1] : null;
+                
+                // Add spacing after section totals (before next major section)
+                const shouldAddSpacing = item.label.toLowerCase().includes('total') && 
+                                        (item.category === 'total' || item.category === 'grand-total') &&
+                                        nextItem && 
+                                        (nextItem.isHeader || nextItem.isSubHeader);
                 
                 return renderLineItem(item, shouldAddSpacing);
               })
@@ -79,7 +101,7 @@ export const StatementPreview = ({ statementData, selectedItems }: StatementPrev
           </tbody>
         </table>
       </div>
-
+      
       <div className="mt-6 text-left">
         <p className="text-sm text-financial-gray italic">
           The accompanying notes form an integral part of these financial statements
