@@ -21,39 +21,39 @@ export const ContentsPage = () => {
         </h3>
 
         <div className="space-y-0">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-start py-2">
             <span className="text-left">Statement by Directors</span>
             <span className="text-right font-bold">Page</span>
           </div>
           
           <div className="flex justify-between items-center py-1">
             <span className="text-left">Independent Auditor's Report</span>
-            <span className="text-right">____</span>
+            <span className="text-right"></span>
           </div>
           
           <div className="flex justify-between items-center py-1">
             <span className="text-left">Statement of Profit or Loss and Other Comprehensive Income</span>
-            <span className="text-right">____</span>
+            <span className="text-right"></span>
           </div>
           
           <div className="flex justify-between items-center py-1">
             <span className="text-left">Statement of Financial Position</span>
-            <span className="text-right">____</span>
+            <span className="text-right"></span>
           </div>
           
           <div className="flex justify-between items-center py-1">
             <span className="text-left">Statement of Changes in Equity</span>
-            <span className="text-right">____</span>
+            <span className="text-right"></span>
           </div>
           
           <div className="flex justify-between items-center py-1">
             <span className="text-left">Statement of Cash Flows</span>
-            <span className="text-right">____</span>
+            <span className="text-right"></span>
           </div>
           
           <div className="flex justify-between items-center py-1">
             <span className="text-left">Notes to the Financial Statements</span>
-            <span className="text-right">____</span>
+            <span className="text-right"></span>
           </div>
         </div>
       </div>

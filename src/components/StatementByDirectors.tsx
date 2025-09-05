@@ -15,20 +15,12 @@ export const StatementByDirectors = () => {
           </h2>
         </div>
 
-        <div className="space-y-6 text-left">
-          <div className="flex justify-between">
-            <div>
-              <p>
-                The directors of the company are pleased to present the financial statements of the company for the 
-                reporting year ended 31 December 2024. <u>The reporting year covers the period since incorporation 
-                on _____ 2024 to _____ 2024</u>.
-              </p>
-            </div>
-            <div className="text-right">
-              <p className="font-bold">Ref</p>
-              <p>____</p>
-            </div>
-          </div>
+        <div className="space-y-6 text-left mx-10" style={{marginLeft: '2.5in', marginRight: '2.5in'}}>
+          <p>
+            The directors of the company are pleased to present the financial statements of the company for the 
+            reporting year ended 31 December 2024. <u>The reporting year covers the period since incorporation 
+            on _____ 2024 to _____ 2024</u>.
+          </p>
 
           <p className="text-red-600 italic">
             [If there is change of name] Before 31 July 2024 the company was known as CLA Pte Ltd, which 
@@ -36,58 +28,30 @@ export const StatementByDirectors = () => {
           </p>
 
           <div className="space-y-4">
-            <div className="flex justify-between">
-              <div>
-                <h3 className="font-bold mb-2">1&nbsp;&nbsp;&nbsp;&nbsp;Opinion of the directors</h3>
-              </div>
-              <div className="text-right">
-                <p>s.201(16)</p>
-              </div>
-            </div>
+            <h3 className="font-bold mb-2">1&nbsp;&nbsp;&nbsp;&nbsp;Opinion of the directors</h3>
 
             <p>In the opinion of the directors,</p>
 
             <div className="space-y-4 ml-4">
-              <div className="flex justify-between">
-                <div>
-                  <p>
-                    (a) the accompanying financial statements are drawn up so as to give a true and fair view of the 
-                    financial position and performance of the company for the reporting year covered by the 
-                    financial statements; and
-                  </p>
-                </div>
-                <div className="text-right">
-                  <p>____</p>
-                </div>
-              </div>
+              <p>
+                (a) the accompanying financial statements are drawn up so as to give a true and fair view of the 
+                financial position and performance of the company for the reporting year covered by the 
+                financial statements; and
+              </p>
 
-              <div className="flex justify-between">
-                <div>
-                  <p>
-                    (b) at the date of the statement there are reasonable grounds to believe that the company 
-                    will be able to pay its debts as and when they fall due.
-                  </p>
-                </div>
-                <div className="text-right">
-                  <p>____</p>
-                </div>
-              </div>
+              <p>
+                (b) at the date of the statement there are reasonable grounds to believe that the company 
+                will be able to pay its debts as and when they fall due.
+              </p>
             </div>
 
             <p>The board of directors approved and authorised these financial statements for issue.</p>
 
-            <div className="flex justify-between mt-8">
-              <div>
-                <h3 className="font-bold">2&nbsp;&nbsp;&nbsp;&nbsp;Directors</h3>
-              </div>
-              <div className="text-right">
-                <p>____</p>
-              </div>
-            </div>
+            <h3 className="font-bold mt-8">2&nbsp;&nbsp;&nbsp;&nbsp;Directors</h3>
 
             <p>The directors of the company in office at the date of this statement are:</p>
 
-            <div className="space-y-2 mt-4">
+            <div className="space-y-2 mt-4 ml-4">
               <p>Mr ____________________</p>
               <p>Mr ____________________</p>
               <p>Ms ____________________</p>
@@ -95,15 +59,7 @@ export const StatementByDirectors = () => {
               <p>________________________</p>
             </div>
 
-            <div className="flex justify-between mt-8">
-              <div>
-                <h3 className="font-bold">3&nbsp;&nbsp;&nbsp;&nbsp;Directors' interests in shares and debentures</h3>
-              </div>
-              <div className="text-right">
-                <p>____</p>
-                <p>s.164(1d)</p>
-              </div>
-            </div>
+            <h3 className="font-bold mt-8">3&nbsp;&nbsp;&nbsp;&nbsp;Directors' interests in shares and debentures</h3>
 
             <p>
               The directors of the company holding office at the end of the reporting year had no interests in 
@@ -117,91 +73,76 @@ export const StatementByDirectors = () => {
 
       {/* Page 2 */}
       <div className="bg-white rounded-lg border border-border shadow-sm p-6">
-        <div className="space-y-6 text-left">
+        <div className="space-y-6 text-left" style={{marginLeft: '2.5in', marginRight: '2.5in'}}>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
                 <tr>
-                  <th className="py-2 px-3 text-left font-semibold"></th>
-                  <th className="py-2 px-3 text-center font-semibold">At beginning of the reporting year or date of appointment if later</th>
-                  <th className="py-2 px-3 text-center font-semibold">At end of the reporting year</th>
-                  <th className="py-2 px-3 text-right font-semibold">Ref</th>
+                  <th className="py-2 px-3 text-center font-semibold underline" colSpan={1}>Name of directors or companies in which interests are held</th>
+                  <th className="py-2 px-3 text-center font-semibold underline">At beginning of the reporting year or date of appointment if later</th>
+                  <th className="py-2 px-3 text-center font-semibold underline">At end of the reporting year</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="py-1 px-3 text-left font-semibold" colSpan={4}>
-                    Name of directors or companies in which interests are held
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-1 px-3 text-left font-semibold" colSpan={4}>
+                  <td className="py-1 px-3 text-center font-semibold underline" colSpan={3}>
                     Number of shares of no par value
                   </td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">RSM Aone Pte Ltd (the company)</td>
+                  <td className="py-1 px-3 text-left ml-4">COMPANY (the company)</td>
                   <td className="py-1 px-3 text-center"></td>
                   <td className="py-1 px-3 text-center"></td>
-                  <td className="py-1 px-3 text-right">s.7(4A)</td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">M_____</td>
+                  <td className="py-1 px-3 text-left ml-4">M_____</td>
                   <td className="py-1 px-3 text-center">____</td>
                   <td className="py-1 px-3 text-center">____</td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">M_____</td>
+                  <td className="py-1 px-3 text-left ml-4">M_____</td>
                   <td className="py-1 px-3 text-center">____</td>
                   <td className="py-1 px-3 text-center">____</td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">XYZ Ltd (Parent company)</td>
+                  <td className="py-1 px-3 text-left ml-4">XYZ Ltd (Parent company)</td>
                   <td className="py-1 px-3 text-center"></td>
                   <td className="py-1 px-3 text-center"></td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">Ms_____</td>
+                  <td className="py-1 px-3 text-left ml-4">Ms_____</td>
                   <td className="py-1 px-3 text-center">____</td>
                   <td className="py-1 px-3 text-center">____</td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left font-semibold" colSpan={4}>
+                  <td className="py-1 px-3 text-center font-semibold underline" colSpan={3}>
                     Deemed interest in number of shares of no par value
                   </td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">RSM Aone Pte Ltd (the company)</td>
+                  <td className="py-1 px-3 text-left ml-4">COMPANY (the company)</td>
                   <td className="py-1 px-3 text-center"></td>
                   <td className="py-1 px-3 text-center"></td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">Mr MNO (resigned on 13 Jan 2024)</td>
+                  <td className="py-1 px-3 text-left ml-4">Mr MNO (resigned on 13 Jan 2024)</td>
                   <td className="py-1 px-3 text-center">____</td>
                   <td className="py-1 px-3 text-center">____</td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left font-semibold" colSpan={4}>
+                  <td className="py-1 px-3 text-center font-semibold underline" colSpan={3}>
                     Options /// and or /// Warrants
                   </td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">RSM Aone Pte Ltd (the company)</td>
+                  <td className="py-1 px-3 text-left ml-4">COMPANY (the company)</td>
                   <td className="py-1 px-3 text-center"></td>
                   <td className="py-1 px-3 text-center"></td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
                 <tr>
-                  <td className="py-1 px-3 text-left">M_____</td>
+                  <td className="py-1 px-3 text-left ml-4">M_____</td>
                   <td className="py-1 px-3 text-center">____</td>
                   <td className="py-1 px-3 text-center">____</td>
-                  <td className="py-1 px-3 text-right"></td>
                 </tr>
               </tbody>
             </table>
@@ -220,39 +161,24 @@ export const StatementByDirectors = () => {
               includes options, warrants, shares as per s 7(6) (4A).</u>
             </p>
 
-            <div className="flex justify-between">
-              <div>
-                <p className="text-red-600 italic">
-                  [If it applicable. For a wholly owned subsidiary of a Singapore company]. However, disclosures 
-                  are still required in the FS under FRS 24 (7(6) 79) Mr AAA, Mr BBB, [if JVJM] All the directors of the 
-                  company in [1st also appear] of XYZ Ltd which is incorporated in Singapore which owns all the shares 
-                  of the company. The interests of the directors are recorded in the register of directors' interests in 
-                  shares in or debentures kept under section 164 of the Act by XYZ Ltd which owns all the shares of 
-                  Singapore and are therefore not disclosed in this report.
-                </p>
-              </div>
-              <div className="text-right">
-                <p>s.7(4A)</p>
-                <p>s.164</p>
-              </div>
-            </div>
+            <p className="text-red-600 italic">
+              [If it applicable. For a wholly owned subsidiary of a Singapore company]. However, disclosures 
+              are still required in the FS under FRS 24 (7(6) 79) Mr AAA, Mr BBB, [if JVJM] All the directors of the 
+              company in [1st also appear] of XYZ Ltd which is incorporated in Singapore which owns all the shares 
+              of the company. The interests of the directors are recorded in the register of directors' interests in 
+              shares in or debentures kept under section 164 of the Act by XYZ Ltd which owns all the shares of 
+              Singapore and are therefore not disclosed in this report.
+            </p>
 
             <p>
               Mr XXX and Ms YYY, the other directors of ZZZ Ltd have no interests in the shares or debentures 
               of this company and any other related body corporates of the company.
             </p>
 
-            <div className="flex justify-between">
-              <div>
-                <p>
-                  By virtue of section 7 of the Act the above directors with interests are deemed to have an interest in 
-                  the company and in all the related body corporates of the company
-                </p>
-              </div>
-              <div className="text-right">
-                <p>s.7(4A)</p>
-              </div>
-            </div>
+            <p>
+              By virtue of section 7 of the Act the above directors with interests are deemed to have an interest in 
+              the company and in all the related body corporates of the company
+            </p>
 
             <p className="text-red-600 italic">
               [Note: SGX 1207 (7) For listed companies, directors' interests as at the 21st day after the end of the 
@@ -264,44 +190,23 @@ export const StatementByDirectors = () => {
               year.
             </p>
 
-            <div className="flex justify-between">
-              <div>
-                <h3 className="font-bold">4&nbsp;&nbsp;&nbsp;&nbsp;Arrangements to enable directors to acquire benefits by means of the acquisition of shares and debentures</h3>
-              </div>
-              <div className="text-right">
-                <p>____</p>
-              </div>
-            </div>
+            <h3 className="font-bold">4&nbsp;&nbsp;&nbsp;&nbsp;Arrangements to enable directors to acquire benefits by means of the acquisition of shares and debentures</h3>
 
-            <div className="flex justify-between">
-              <div>
-                <p>
-                  Neither at the end of the reporting year nor at any time during the reporting year did there subsist 
-                  arrangements to which the company is a party, being arrangements whose objects are, or one of 
-                  whose objects is to enable directors of the company to acquire benefits by means of the 
-                  acquisition of shares in or debentures of the company or any other body corporate, <u>except for the 
-                  options rights and other rights mentioned below, /// or /// except as disclosed below.</u>
-                </p>
-              </div>
-              <div className="text-right">
-                <p>s.164(1d)</p>
-              </div>
-            </div>
+            <p>
+              Neither at the end of the reporting year nor at any time during the reporting year did there subsist 
+              arrangements to which the company is a party, being arrangements whose objects are, or one of 
+              whose objects is to enable directors of the company to acquire benefits by means of the 
+              acquisition of shares in or debentures of the company or any other body corporate, <u>except for the 
+              options rights and other rights mentioned below, /// or /// except as disclosed below.</u>
+            </p>
           </div>
         </div>
       </div>
 
       {/* Page 3 */}
       <div className="bg-white rounded-lg border border-border shadow-sm p-6">
-        <div className="space-y-6 text-left">
-          <div className="flex justify-between">
-            <div>
-              <h3 className="font-bold">5&nbsp;&nbsp;&nbsp;&nbsp;Options</h3>
-            </div>
-            <div className="text-right">
-              <p>____</p>
-            </div>
-          </div>
+        <div className="space-y-6 text-left" style={{marginLeft: '2.5in', marginRight: '2.5in'}}>
+          <h3 className="font-bold">5&nbsp;&nbsp;&nbsp;&nbsp;Options</h3>
 
           <p>
             During the reporting year, no option to take up unissued shares of the company was granted. <span className="text-red-600 italic">[If or 
@@ -324,14 +229,7 @@ export const StatementByDirectors = () => {
             disclosed in the above paragraph.]</span>
           </p>
 
-          <div className="flex justify-between">
-            <div>
-              <h3 className="font-bold">6&nbsp;&nbsp;&nbsp;&nbsp;Independent auditor</h3>
-            </div>
-            <div className="text-right">
-              <p>Optional</p>
-            </div>
-          </div>
+          <h3 className="font-bold">6&nbsp;&nbsp;&nbsp;&nbsp;Independent auditor</h3>
 
           <p>RSM SG Assurance LLP has expressed willingness to accept re-appointment</p>
 
