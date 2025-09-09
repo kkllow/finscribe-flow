@@ -5,7 +5,7 @@ export const StatementByDirectors = () => {
     <div className="space-y-6">
       {/* Page 1 */}
       <div className="bg-white rounded-lg border border-border shadow-sm p-6">
-        <div style={{marginLeft: '1in', marginRight: '1in'}}>
+        <div style={{marginLeft: '0.5in', marginRight: '1in'}}>
           <div className="mb-6">
             <h1 className="font-bold text-left mb-4" style={{fontFamily: 'Arial', fontSize: '10pt'}}>
               COMPANY
@@ -34,15 +34,15 @@ export const StatementByDirectors = () => {
               <p style={{fontFamily: 'Arial', fontSize: '10pt'}}>In the opinion of the directors,</p>
 
               <div className="space-y-4">
-                <div style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '0.5in', textIndent: '-0.5in'}}>
-                  (a) the accompanying financial statements are drawn up so as to give a true and fair view of the 
-                  financial position and performance of the company for the reporting year covered by the 
-                  financial statements; and
+                <div style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '0.3in', textIndent: '-0.3in'}}>
+                  (a)&nbsp;&nbsp;&nbsp;&nbsp;the accompanying financial statements are drawn up so as to give a true and fair view of the 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;financial position and performance of the company for the reporting year covered by the 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;financial statements; and
                 </div>
 
-                <div style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '0.5in', textIndent: '-0.5in'}}>
-                  (b) at the date of the statement there are reasonable grounds to believe that the company 
-                  will be able to pay its debts as and when they fall due.
+                <div style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '0.3in', textIndent: '-0.3in'}}>
+                  (b)&nbsp;&nbsp;&nbsp;&nbsp;at the date of the statement there are reasonable grounds to believe that the company 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will be able to pay its debts as and when they fall due.
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ export const StatementByDirectors = () => {
 
       {/* Page 2 */}
       <div className="bg-white rounded-lg border border-border shadow-sm p-6">
-        <div style={{marginLeft: '1in', marginRight: '1in'}}>
+        <div style={{marginLeft: '0.5in', marginRight: '1in'}}>
           <div className="space-y-6 text-left">
             <div className="overflow-x-auto" style={{marginLeft: '1.5in'}}>
               <table className="w-full border-collapse">
@@ -93,27 +93,27 @@ export const StatementByDirectors = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>COMPANY (the company)</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>COMPANY (the company)</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>M_____</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>M_____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>M_____</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>M_____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>XYZ Ltd (Parent company)</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>XYZ Ltd (Parent company)</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>Ms_____</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>Ms_____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                   </tr>
@@ -123,12 +123,12 @@ export const StatementByDirectors = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>COMPANY (the company)</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>COMPANY (the company)</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>Mr MNO (resigned on 13 Jan 2024)</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>Mr MNO (resigned on 13 Jan 2024)</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                   </tr>
@@ -138,12 +138,12 @@ export const StatementByDirectors = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>COMPANY (the company)</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>COMPANY (the company)</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}></td>
                   </tr>
                   <tr>
-                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1in'}}>M_____</td>
+                    <td className="py-1 px-3 text-left" style={{fontFamily: 'Arial', fontSize: '10pt', paddingLeft: '1.5in'}}>M_____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                     <td className="py-1 px-3 text-center" style={{fontFamily: 'Arial', fontSize: '10pt'}}>____</td>
                   </tr>
@@ -209,7 +209,7 @@ export const StatementByDirectors = () => {
 
       {/* Page 3 */}
       <div className="bg-white rounded-lg border border-border shadow-sm p-6">
-        <div style={{marginLeft: '1in', marginRight: '1in'}}>
+        <div style={{marginLeft: '0.5in', marginRight: '1in'}}>
           <div className="space-y-6 text-left">
             <h3 className="font-bold" style={{fontFamily: 'Arial', fontSize: '10pt'}}>5&nbsp;&nbsp;&nbsp;&nbsp;Options</h3>
 

@@ -3,7 +3,7 @@ import React from 'react';
 export const ContentsPage = () => {
   return (
     <div className="bg-white rounded-lg border border-border shadow-sm p-6 mb-6">
-      <div style={{marginLeft: '1in', marginRight: '1in'}}>
+      <div style={{marginLeft: '0.5in', marginRight: '1in'}}>
         <div className="mb-8">
           <h1 className="text-left mb-2 font-bold" style={{fontFamily: 'Arial', fontSize: '10pt'}}>
             COMPANY (Registration No.: ____________)
